@@ -1,12 +1,18 @@
 #Venta con descuento por porcentaje: Solicitar el precio de un producto y el porcentaje de descuento. Calcular y mostrar el valor del descuento y el precio final.
 def activity8():
     try:
-
-
+        
+        from colorama import init, Fore, Back, Style
+        
+        init(autoreset=True)
+        
+        print(Fore.BLUE + "================================================")
+        print(Fore.YELLOW + "Venta con Descuento por Porcentaje")
+        print(Fore.BLUE + "================================================")
+        
         x = int(input("Ingrese el Valor del Producto: "))
         y = int(input("Ingrese el Valor del Descuento: "))
-
-
+        
         descuento = x * (y / 100)
         total = x - descuento
             
@@ -15,6 +21,6 @@ def activity8():
         
     except ValueError:
         print("Debes Ingresar un Número Válido")
-
+        
 if __name__ == "__main__":
     activity8()

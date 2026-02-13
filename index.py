@@ -6,11 +6,16 @@ import subprocess #Ejecuta comandos externos y programas, controlando sus entrad
 
 
 while True:
-    print("================================================")
-    print("Taller 1 - Algoritmos Basicos en Python")
-    print("By Sebastian Zuleta Echavarria")   
-    print("Menu Principal")
-    print("================================================")
+    
+    from colorama import init, Fore, Back, Style
+        
+    init(autoreset=True)
+    
+    print(Fore.BLUE + "================================================")
+    print(Fore.YELLOW + "Taller 1 - Algoritmos Basicos en Python")
+    print(Fore.YELLOW + "By Sebastian Zuleta Echavarria")   
+    print(Fore.YELLOW + "Menu Principal")
+    print(Fore.BLUE + "================================================")
 
     for i in range(1, 26):
         print(f"{i}. Ejecutar Algoritmo {i}")

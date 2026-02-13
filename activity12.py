@@ -1,10 +1,17 @@
 #Comisión escalonada: Solicitar el valor de ventas mensuales. Si las ventas son mayores a $1.000.000, la comisión es del 10%; de lo contrario, es del 5%. Mostrar la comisión.
 def activity12():
     try:
-
-
+        
+        from colorama import init, Fore, Back, Style
+        
+        init(autoreset=True)
+        
+        print(Fore.BLUE + "================================================")
+        print(Fore.YELLOW + "Comisión Escalonada")
+        print(Fore.BLUE + "================================================")
+        
         x = int(input("Ingrese el Valor de las Ventas Mensuales: "))
-
+        
         if x > 1000000:
             comision = x * 0.10
             total = x + comision
@@ -16,6 +23,6 @@ def activity12():
         
     except ValueError:
         print("Debes Ingresar un Número Válido")
-
+        
 if __name__ == "__main__":
     activity12()
